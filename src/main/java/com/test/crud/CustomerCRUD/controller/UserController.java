@@ -22,7 +22,8 @@ import javax.validation.Valid;
 
     private final UserRepository userRepository;
 
-    @Autowired public UserController(UserRepository userRepository) {
+    @Autowired
+    public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
@@ -56,9 +57,6 @@ import javax.validation.Valid;
         User user = userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Invalid User Id"));
         userRepository.delete(user);
         model.addAttribute("users", userRepository.findAll());
-        if ( true ) {
-
-        }
         return "index";
     }
 
