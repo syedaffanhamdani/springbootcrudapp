@@ -1,4 +1,4 @@
-package com.test.crud.CustomerCRUD.bootsstrap;
+package com.test.crud.CustomerCRUD.bootstrap;
 
 import com.test.crud.CustomerCRUD.persistence.User;
 import com.test.crud.CustomerCRUD.persistence.repository.UserRepository;
