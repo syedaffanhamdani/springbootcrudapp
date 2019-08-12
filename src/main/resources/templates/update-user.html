@@ -20,6 +20,9 @@
     <label for="firstName">Name</label>
     <input type="text" th:field="*{firstName}" id="firstName" placeholder="First Name">
     <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+        <label for="lastName">firstName</label>
+        <input type="text" class="form-control" th:field="*{lastName}" id="lastName" placeholder="First Name">
+        <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
     <label for="email">Email</label>
     <input type="text" th:field="*{email}" id="email" placeholder="Email">
     <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
