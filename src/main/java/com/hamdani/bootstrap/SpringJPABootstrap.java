@@ -1,7 +1,7 @@
-package com.test.crud.CustomerCRUD.bootstrap;
+package com.hamdani.bootstrap;
 
-import com.test.crud.CustomerCRUD.persistence.User;
-import com.test.crud.CustomerCRUD.persistence.repository.UserRepository;
+import com.hamdani.persistence.User;
+import com.hamdani.persistence.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;

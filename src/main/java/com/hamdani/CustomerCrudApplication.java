@@ -1,11 +1,11 @@
-package com.test.crud.CustomerCRUD;
+package com.hamdani;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.test.crud")
+@ComponentScan("com.hamdani")
 public class CustomerCrudApplication {
 
 	public static void main(String[] args) {

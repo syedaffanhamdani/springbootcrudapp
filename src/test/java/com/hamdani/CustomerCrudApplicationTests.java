@@ -1,4 +1,4 @@
-package com.test.crud.CustomerCRUD;
+package com.hamdani;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

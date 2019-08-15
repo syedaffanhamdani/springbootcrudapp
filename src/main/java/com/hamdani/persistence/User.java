@@ -1,4 +1,4 @@
-package com.test.crud.CustomerCRUD.persistence;
+package com.hamdani.persistence;
 
 import javax.persistence.*;
 

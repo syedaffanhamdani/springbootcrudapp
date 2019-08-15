@@ -1,4 +1,4 @@
-package com.test.crud.CustomerCRUD.config;
+package com.hamdani.config;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;

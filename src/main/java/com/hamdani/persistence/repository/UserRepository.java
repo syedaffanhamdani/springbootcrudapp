@@ -1,6 +1,6 @@
-package com.test.crud.CustomerCRUD.persistence.repository;
+package com.hamdani.persistence.repository;
 
-import com.test.crud.CustomerCRUD.persistence.User;
+import com.hamdani.persistence.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
