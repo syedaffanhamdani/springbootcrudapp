@@ -17,8 +17,9 @@ import javax.validation.Valid;
 @Controller
 public class UserController {
 
-  @GetMapping("/signup")
+  @GetMapping("/signUp")
   public String signup() {
+
     return "add-user";
   }
 
@@ -47,10 +48,9 @@ public class UserController {
 
   @GetMapping("getUser")
   public String getUser(@Param("firstName") String firstName) {
+
     userRepository.findByFirstName(firstName);
-    for (User user : userRepository.findByFirstName(firstName)) {
-      System.out.println(user.getEmail());
-    }
+
     if (userRepository.findByFirstName(firstName).isEmpty()) {
       System.out.println("No user found with Name " + firstName);
     }
@@ -60,36 +60,47 @@ public class UserController {
 
   @GetMapping("/delete/{id}")
   public String deleteUser(@PathVariable("id") long id, Model model) {
+
     User user = userRepository.findById(id)
         .orElseThrow(() -> new IllegalArgumentException("Invalid User Id"));
+
     userRepository.delete(user);
+
     model.addAttribute("users", userRepository.findAll());
+
     return "index";
   }
 
 
   @GetMapping("/edit/{id}")
   public String showUpdateForm(@PathVariable("id") long id, Model model) {
+
     User user = userRepository.findById(id)
         .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
     model.addAttribute("user", user);
+
     return "update-user";
   }
 
   @PostMapping("/update/{id}")
   public ModelAndView updateUser(@PathVariable("id") long id, @Valid User user,
       BindingResult result, Model model) {
+
     if (result.hasErrors()) {
       user.setId(id);
       return new ModelAndView("update-user");
     }
+
     User user1 = userRepository.findById(id)
         .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
     user1.setFirstName(user.getFirstName());
     user1.setLastName((user.getLastName()));
     user1.setEmail(user.getEmail());
+
     userRepository.save(user1);
+
     model.addAttribute("users", userRepository.findAll());
+
     return new ModelAndView("index");
   }
 

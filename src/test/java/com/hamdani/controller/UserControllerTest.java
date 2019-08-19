@@ -62,6 +62,16 @@ public class UserControllerTest {
         Mockito.verify(userRepository, Mockito.times(1)).delete(any(User.class));
     }
 
+    @Test
+    public void signUpUserHappyCase() throws Exception{
+        mockMvc.perform(get("/signUp"))
+                .andExpect(status().is2xxSuccessful())
+                .andExpect(view().name("add-user"));
+
+        }
+
+
+
     private Optional<User> getUser() {
         User mUser = new User();
         mUser.setEmail("syed@affanhamdani.me");
