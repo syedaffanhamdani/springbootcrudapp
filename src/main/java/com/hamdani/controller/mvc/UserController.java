@@ -1,7 +1,7 @@
 package com.hamdani.controller.mvc;
 
 import com.hamdani.persistence.entities.User;
-import com.hamdani.persistence.repository.UserRepository;
+import com.hamdani.persistence.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;

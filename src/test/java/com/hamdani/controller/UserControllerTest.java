@@ -2,7 +2,7 @@ package com.hamdani.controller;
 
 import com.hamdani.controller.mvc.UserController;
 import com.hamdani.persistence.entities.User;
-import com.hamdani.persistence.repository.UserRepository;
+import com.hamdani.persistence.repositories.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;

@@ -1,4 +1,4 @@
-package com.hamdani.persistence.repository;
+package com.hamdani.persistence.repositories;
 
 import com.hamdani.persistence.entities.User;
 import org.springframework.data.repository.CrudRepository;

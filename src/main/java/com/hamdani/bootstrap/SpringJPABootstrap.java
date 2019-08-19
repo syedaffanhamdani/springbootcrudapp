@@ -1,7 +1,7 @@
 package com.hamdani.bootstrap;
 
 import com.hamdani.persistence.entities.User;
-import com.hamdani.persistence.repository.UserRepository;
+import com.hamdani.persistence.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
