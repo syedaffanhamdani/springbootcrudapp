@@ -1,4 +1,4 @@
-# Spring boot sample application
+# Spring Boot sample application
 
 Minimal [Spring Boot](http://projects.spring.io/spring-boot/) sample app with basic CRUD operations.
 
