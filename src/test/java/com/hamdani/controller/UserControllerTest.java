@@ -1,6 +1,7 @@
 package com.hamdani.controller;
 
-import com.hamdani.persistence.User;
+import com.hamdani.controller.mvc.UserController;
+import com.hamdani.persistence.entities.User;
 import com.hamdani.persistence.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
